@@ -3,74 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Saya</title>
+    <title>Yonaldo A.S | Futuristic Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for Cyber/Tech Vibe -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Header & Navigasi -->
-    <header>
-        <h1>Nama Anda</h1>
-        <p>Web Developer | Student / Programmer</p>
-        <hr>
-        <nav>
-            <ul>
-                <li><a href="#tentang">Tentang Saya</a></li>
-                <li><a href="#keahlian">Keahlian</a></li>
-                <li><a href="#proyek">Proyek</a></li>
-                <li><a href="#kontak">Kontak</a></li>
-            </ul>
-        </nav>
+    <div class="grid-overlay"></div>
+
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="logo">&lt;YONALDO.DEV /&gt;</div>
+        <ul class="nav-links">
+            <li><a href="#about">// TENTANG</a></li>
+            <li><a href="#education">// PENDIDIKAN</a></li>
+            <li><a href="#org">// ORGANISASI</a></li>
+            <li><a href="#skills">// STACK</a></li>
+            <li><a href="#contact">// KONTAK</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero / Landing Section -->
+    <header class="hero">
+        <div class="hero-container">
+            <div class="profile-frame">
+                <div class="scanline"></div>
+                <img src="IMG-20261002-WA0089.jpg" alt="Foto Yonaldo A.S" class="profile-img">
+            </div>
+            <div class="hero-content">
+                <div class="status-badge"><span class="pulse"></span> SYSTEM ONLINE</div>
+                <h1 class="glitch-text" data-text="YONALDO A.S">YONALDO A.S</h1>
+                <p class="npm-tag">&gt; IDENTITY_NPM: <span class="highlight">248160011</span></p>
+                <p class="hero-bio">
+                    Cyber Enthusiast & Student at <span class="accent-text">Universitas Medan Area</span>.
+                    Fokus pada pengembangan perangkat lunak, eksplorasi teknologi masa depan, dan arsitektur web modern.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn primary-btn">[ HUBUNGI SAYA ]</a>
+                    <a href="#skills" class="btn secondary-btn">[ LIHAT STACK ]</a>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <hr>
+    <!-- Main Content -->
+    <main class="main-container">
 
-    <!-- Section Tentang Saya -->
-    <section id="tentang">
-        <h2>Tentang Saya</h2>
-        <p>Halo! Saya adalah seorang pengembang web yang tertarik pada pengembangan aplikasi web dan software development. Saya menikmati proses memecahkan masalah melalui baris kode dan merancang sistem yang efisien.</p>
-    </section>
+        <!-- About Section -->
+        <section id="about" class="cyber-card">
+            <h2 class="section-title"><span class="symbol">&gt;</span> 01. TENTANG SAYA</h2>
+            <p>
+                Halo! Saya Yonaldo A.S, seorang mahasiswa Informatika yang memiliki ketertarikan tinggi terhadap dunia teknologi, keamanan sistem, serta web development. Saya berdedikasi untuk terus mempelajari teknologi terbaru dan menciptakan solusi digital yang efisien dan inovatif.
+            </p>
+        </section>
 
-    <hr>
+        <!-- Education Section -->
+        <section id="education" class="cyber-card">
+            <h2 class="section-title"><span class="symbol">&gt;</span> 02. PENDIDIKAN</h2>
+            <div class="card-content">
+                <div class="info-block">
+                    <h3>UNIVERSITAS MEDAN AREA</h3>
+                    <p class="sub-text">S1 - TEKNIK INFORMATIKA</p>
+                    <p class="details">Fakultas Teknik | Mahasiswa Aktif</p>
+                    <div class="terminal-box">
+                        <code>$ status --education: IN_PROGRESS<br>$ current_npm: 248160011</code>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Section Keahlian -->
-    <section id="keahlian">
-        <h2>Keahlian / Tech Stack</h2>
-        <ul>
-            <li><strong>Bahasa Pemrograman:</strong> HTML, CSS, JavaScript, TypeScript, Python</li>
-            <li><strong>Framework & Tools:</strong> Node.js, Express.js, React, Git, MySQL</li>
-            <li><strong>Lainnya:</strong> REST API, Database Management</li>
-        </ul>
-    </section>
+        <!-- Organization Section -->
+        <section id="org" class="cyber-card">
+            <h2 class="section-title"><span class="symbol">&gt;</span> 03. ORGANISASI</h2>
+            <div class="card-content">
+                <div class="info-block">
+                    <h3>HIMPUNAN MAHASISWA INFORMATIKA (HMIF UMA)</h3>
+                    <p class="sub-text">ANGGOTA AKTIF</p>
+                    <p class="details">
+                        Berpartisipasi aktif dalam berbagai kegiatan teknologi, workshop, dan pengembangan komunitas mahasiswa Informatika di lingkungan Universitas Medan Area.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-    <hr>
+        <!-- Tech Stack Section -->
+        <section id="skills" class="cyber-card">
+            <h2 class="section-title"><span class="symbol">&gt;</span> 04. SKILLS & TECH STACK</h2>
+            <div class="skills-grid">
+                <div class="skill-item">&gt; HTML5 / CSS3</div>
+                <div class="skill-item">&gt; JAVASCRIPT (ES6+)</div>
+                <div class="skill-item">&gt; PYTHON</div>
+                <div class="skill-item">&gt; GIT & GITHUB</div>
+                <div class="skill-item">&gt; LINUX TERMINAL</div>
+                <div class="skill-item">&gt; NETWORK BASICS</div>
+            </div>
+        </section>
 
-    <!-- Section Proyek -->
-    <section id="proyek">
-        <h2>Proyek Saya</h2>
-        
-        <article>
-            <h3>1. Web Job Recommendation System</h3>
-            <p>Sistem rekomendasi lowongan kerja menggunakan metode web scraping dan Content-Based Filtering.</p>
-            <p><strong>Teknologi:</strong> Python, Web Scraping, HTML/CSS</p>
-            <p><a href="https://github.com/username/repository- name" target="_blank">Lihat Repositori GitHub</a></p>
-        </article>
+        <!-- Contact Section -->
+        <section id="contact" class="cyber-card">
+            <h2 class="section-title"><span class="symbol">&gt;</span> 05. TERMINAL KONTAK</h2>
+            <div class="contact-box">
+                <p>Ingin berkolaborasi atau berdiskusi mengenai proyek teknologi? Kirimkan pesan Anda:</p>
+                <div class="terminal-box">
+                    <code>
+                        $ connect --email: <a href="mailto:emailanda@example.com">yonaldo@example.com</a><br>
+                        $ connect --github: <a href="https://github.com/username-anda" target="_blank">github.com/username-anda</a><br>
+                        $ connect --linkedin: <a href="https://linkedin.com/in/username-anda" target="_blank">linkedin.com/in/username-anda</a>
+                    </code>
+                </div>
+            </div>
+        </section>
 
-        <br>
+    </main>
 
-        <article>
-            <h3>2. Interactive Schedule & Dashboard TUI</h3>
-            <p>Aplikasi antarmuka terminal untuk melihat jadwal perkuliahan dan rekap nilai akademik secara efisien.</p>
-            <p><strong>Teknologi:</strong> PowerShell, fzf</p>
-            <p><a href="https://github.com/username/repository- name" target="_blank">Lihat Repositori GitHub</a></p>
-        </article>
-    </section>
+    <!-- Cyber Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 YONALDO A.S [NPM 248160011]. ALL RIGHTS RESERVED.</p>
+        <p class="sub-footer">SYSTEM OPERATIONAL // UNIVERSITAS MEDAN AREA // HMIF UMA</p>
+    </footer>
 
-    <hr>
-
-    <!-- Section Kontak -->
-    <section id="kontak">
-        <h2>Kontak Saya</h2>
-        <p>Silakan hubungi saya melalui media berikut:</p>
-        <ul>
-            <li>Email: <a href="mailto:emailanda@example.com">emailanda@example.com</a></li>
-            <li>GitHub: <a href="https
+</body>
+    </html>
